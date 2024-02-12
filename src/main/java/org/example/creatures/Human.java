@@ -15,7 +15,7 @@ public class Human extends Creature {
 
     @Override
     public boolean run(int distance) {
-        System.out.println("Человек " + name +  " с дальностью бега " + this.distance + " начал бежать");
+        //System.out.println("Человек " + name +  " с дальностью бега " + this.distance + " начал бежать");
         if (this.distance >= distance){
             System.out.println("Человек " + name + " пробежал расстояние " + distance);
             return true;
@@ -29,7 +29,7 @@ public class Human extends Creature {
 
     @Override
     public boolean jump(int height) {
-        System.out.println("Человек " + name + " с высотой прыжка " + this.height + " хочет прыгнуть");
+       // System.out.println("Человек " + name + " с высотой прыжка " + this.height + " хочет прыгнуть");
         if (this.height >= height){
             System.out.println("Человек " + name + " перепрыгнул стену высотой " + height);
             return true;

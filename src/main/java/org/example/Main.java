@@ -42,8 +42,11 @@ public class Main {
         obstacles.add(wall2);
         obstacles.add(wall3);
 
-        for (Obstacle obstacle : obstacles) {
-            for (Creature creature : participants) {
+
+        for (Creature creature : participants) {
+
+            for ( Obstacle obstacle : obstacles) {
+                System.out.println("obstacle.toString() = " + obstacle.toString());
                 if (obstacle.getClass().equals(Track.class)) {
                     if (creature.run(((Track) obstacle).getDistance())) {
                         System.out.println("Участник пробежал");

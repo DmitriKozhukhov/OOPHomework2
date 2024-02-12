@@ -11,7 +11,7 @@ public class Cat extends HostileCreature{
 
     @Override
     public boolean run(int distance) {
-        System.out.println("Кот " + name +  " с дальностью бега " + this.distance + " начал бежать");
+        //System.out.println("Кот " + name +  " с дальностью бега " + this.distance + " начал бежать");
         if (this.distance >= distance){
             System.out.println("Кот " + name + " пробежал расстояние " + distance);
             return true;
@@ -25,7 +25,7 @@ public class Cat extends HostileCreature{
 
     @Override
     public boolean jump(int height) {
-        System.out.println("Кот " + name + " с высотой прыжка " + this.height + " хочет прыгнуть");
+       // System.out.println("Кот " + name + " с высотой прыжка " + this.height + " хочет прыгнуть");
         if (this.height >= height){
             System.out.println("Кот " + name + " перепрыгнул стену высотой " + height);
             return true;

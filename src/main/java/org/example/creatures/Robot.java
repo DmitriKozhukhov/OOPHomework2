@@ -12,7 +12,7 @@ public class Robot extends HostileCreature {
 
     @Override
     public boolean run(int distance) {
-        System.out.println("Робот " + name +  " с дальностью бега " + this.distance + " начал бежать");
+       // System.out.println("Робот " + name +  " с дальностью бега " + this.distance + " начал бежать");
         if (this.distance >= distance){
             System.out.println("Робот " + name + " пробежал расстояние " + distance);
             return true;
@@ -26,7 +26,7 @@ public class Robot extends HostileCreature {
 
     @Override
     public boolean jump(int height) {
-        System.out.println("Робот " + name + " с высотой прыжка " + this.height + " хочет прыгнуть");
+        //System.out.println("Робот " + name + " с высотой прыжка " + this.height + " хочет прыгнуть");
         if (this.height >= height){
             System.out.println("Робот " + name + " перепрыгнул стену высотой " + height);
             return true;
